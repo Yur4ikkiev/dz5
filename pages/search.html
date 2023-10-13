@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+  </head>
+<body class="search">
+    <div class="wrapper">
+        <header class="wrapper__header">
+          <div class="wrapper__logo">
+            <a href="../index.html">
+              <img class="wrapper__logo-img" src="../imgs/autoria.png" alt="logo" />
+            </a>
+          </div>
+            <form class="wrapper__form"> 
+                <input type="text" name="text" class="search__imp" placeholder="поиск">
+                <input type="submit" name="submit" class="search__submit" target="_blank" value="искать">
+              </form>
+          <form
+            class="wrapper__form"
+            action="../pages/registration.html"
+            method="get"
+            target="_blank"
+          >
+            <button class="wrapper__btn" type="submit" class="wrapper__btn">
+              Войти 
+            </button>
+          </form>
+        </header>
+        <div class="search__main">
+             <div class="search__item">
+                <label for="">Тип транпорта</label>
+                <select>
+                    <option >Выбрать</option>
+                    <option >Легковые</option>
+                    <option >Грузовики</option>
+                    <option >Мотоциклы</option>
+                </select>
+            </div>
+            <div class="search__item">
+                <label for="">Тип кузова</label>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                     Седан
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Универсал
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Хетчбек
+                </div>
+            </div>
+            <div class="search__item">
+                <label for="">Марка авто</label>
+                <select>
+                    <option >Выбрать</option>
+                    <option >Audi</option>
+                    <option >Volvo</option>
+                    <option >Porshe</option>
+                </select>
+            </div>
+            <div class="search__item">
+                <label for="">Страна</label>
+                <select>
+                    <option >Выбрать</option>
+                    <option >Украина</option>
+                    <option >Германия</option>
+                    <option >Япония</option>
+                </select>
+            </div>
+            <div class="search__item">
+                <label for="">Цена $ </label>
+                <input class="search__price" type="number"name="price" placeholder="От">
+                <input class="search__price" type="number"name="price" placeholder="До" >
+            </div>
+            <div class="search__item">
+                <label for="">Год выпуска</label>
+                <select>
+                    <option >От</option>
+                    <option >1950</option>
+                    <option >1951</option>
+                    <option >1952</option>
+                </select>
+                <select>
+                    <option >До</option>
+                    <option >2021</option>
+                    <option >2022</option>
+                    <option >2023</option>
+                </select>
+            </div>
+            <div class="search__item">
+                <label for="">Состояние</label>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    После дтп
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Расстаможенная
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    В кредите
+                </div>
+            </div>
+            <div class="search__item">
+                <label for="">Тип топлива</label>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Бензин
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Дизель
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Газ
+                </div>
+            </div>
+            <div class="search__item">
+                <label for="">Коробка передач</label>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Автоматическая
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Ручная
+                </div>
+            </div>
+            <div class="search__item">
+                <label for="">Цвет</label>
+                <select>
+                    <option >Выбрать</option>
+                    <option >Чёрный</option>
+                    <option >Желтый</option>
+                    <option >Белый</option>
+                </select>
+            </div>
+            <div class="search__item">
+                <label for="">Опции</label>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Люк
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Кожанный салон
+                </div>
+                <div class="search__item-tipe">
+                    <input type="checkbox" name="tipe" >
+                    Тюнинг
+                </div>
+            </div>
+            <form
+                class="search__form"
+                action="#"
+                method="get"
+                target="_blank"
+            >
+                <button class="search__btn" type="submit"class="searach__btn">
+                поиск 
+                </button>
+            </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автобазар</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="wrapper__header">
+        <div class="wrapper__logo">
+          <a href="#">
+            <img class="wrapper__logo-img" src="imgs/autoria.png" alt="logo" />
+          </a>
+        </div>
+        <form
+          class="wrapper__form"
+          action="pages/search.html"
+          method="get"
+          target="_blank"
+        >
+          <button class="wrapper__btn" type="submit" class="wrapper__btn">
+            поиск авто
+          </button>
+        </form>
+        <form
+          class="wrapper__form"
+          action="pages/registration.html"
+          method="get"
+          target="_blank"
+        >
+          <button class="wrapper__btn" type="submit" class="wrapper__btn">
+            Войти Зарегистрироваться
+          </button>
+        </form>
+      </header>
+      <h1 class="wrapper__heading">АВТО ИЗ США</h1>
+      <div class="wrapper__news">
+        <p class="wrapper__news-front">
+          <span class="wrapper__news-spa"> <b>Новости:</b></span>
+          <marquee>
+            Рекорды Bugatti под руководством VW В 1998 году Volkswagen приобрёл
+            «хромающую» на тот момент французскую марку Bugatti всего за 50 млн
+            долларов. Благодаря Volkswagen Group, имя Bugatti вернулось в лидеры
+            рынка роскошных автомобилей, сохранив при этом культовый значок EB
+            (Ettore Bugatti), оставшийся со времён основания компании в 1909
+            году. Volkswagen Group выпустила Veyron в 2005 году, оснастив
+            гиперкар 8,0-литровым четырёхтурбинным двигателем W16, развивающим 1
+            001 л.с. Разработка Veyron началась в 2001 году и обошлась концерну
+            Volkswagen Group примерно в 1,6 млрд долларов убытков из-за огромных
+            затрат на производство гиперкара-рекордсмена. Но если оставить в
+            стороне непосильные долги, то Bugatti Veyron стал первым
+            автомобилем, побившим рекорд скорости в 386 км/ч, принадлежавший в
+            1993 году McLaren F1. Благодаря усилиям Volkswagen, Bugatti Veyron
+            разогнался до 407 км/ч в 2005 г., а затем до 430 км/ч в 2010 г.,
+            удерживая лидерство на протяжении нескольких лет с 2005 по 2014 гг.
+            За последние десятилетия гиперкары Bugatti удалось вытеснить только
+            Hennessey, SSC и Koenigsegg.
+          </marquee>
+        </p>
+      </div>
+    </div>
+    <!-- article.check>label.checkbox-$*2>input[type="checkbox" cheked]+span{checkbox-$} -->
+    <!--НА ЭТОТ КОД НЕ СМОТРЕТЬ!!!!!!-->
+    <article class="column">
+      <h2 class="column__heading">CAR BRANDS</h2>
+      <div class="column-wrap">
+        <div class="column__block">Audi</div>
+        <div class="column__block">Volkswagen</div>
+        <div class="column__block">Skoda</div>
+        <div class="column__block">SEAT</div>
+        <div class="column__block">Porsche</div>
+        <div class="column__block">Lamborghini</div>
+      </div>
+      <div class="column-spec">
+        <div class="column__block">Suzuki</div>
+        <div class="column__block">Kawasaki</div>
+        <div class="column__block">Yamaha</div>
+        <div class="column__block">BMW</div>
+        <div class="column__block">Ducati</div>
+        <div class="column__block">Honda</div>
+      </div>
+      <div class="column-mod">
+        <div class="column__block">
+          <span>Man</span>
+        </div>
+        <div class="column__block">Scania</div>
+        <div class="column__block">Volvo</div>
+        <div class="column__block">Renault</div>
+        <div class="column__block">Peterbilt</div>
+        <div class="column__block">Iveco</div>
+      </div>
+    </article>
+    <!-- article.row>.-block*10|bem -->
+    <article class="row">
+      <!-- <h3 class="row__heading"> -->
+      <div class="row-wrap">
+        <div class="row__block">
+          <img src="imgs/mersedes.png" alt="mersedes" />
+        </div>
+        <div class="row__block">
+          <img src="imgs/bmw.png" alt="BMW" />
+        </div>
+        <div class="row__block">
+          <img src="imgs/Volvo-Logo-Transparent.png" alt="volvo" />
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
