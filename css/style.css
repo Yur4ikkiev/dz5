@@ -3,72 +3,400 @@
 
 /* 1 */
 body  {
-    background-color: yellow;
     color: yellow;
     list-style: none;
     text-align: center;
-}
-
-/* 10 */
-.wrapper,
-body .search {
     height: 100vh;
-    background: yellow url('../imgs/car.webp') center no-repeat;
+    background: url('../imgs/car.webp') center no-repeat;
     background-size: cover;
 }
 
-.wrapper__header {
-    padding: 5px 20px;
+a,
+.search__main-btn:hover,
+.search__main select:hover,
+.search__main input:hover{
+cursor: pointer;
+}
+
+.registr__btn:hover, 
+.home-form:hover, 
+.newuser__btn,
+.search__header-submit:hover,
+.home__main-wrap:hover,
+.home__header a:hover,
+.search__header-btn:hover {
+    transform: scale(1.2);
+}
+
+
+.home__header,
+.search__header-wrap,
+.registr__header-wrap {
+    padding: 0.5% 1%;
     background-color: black;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }   
 
-/* 10 */
-.wrapper__logo-img {
-    width: 150px;
-    background-color: black;
-}
-
-.wrapper__btn {
-    width: 200px;
-    height: 45px;
-    border-radius: 40px;
-    background-color: yellow;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    vertical-align: middle;
-    box-shadow: 0 5px 10px yellow;
-    transition: .5s;
-}
-
-/* 11 */
-.wrapper__heading {
-    padding: 21.5vh 0 60.5vh;
-    font-size: 7vmin;
-    color: yellow;
-    text-shadow: 0px 0px 4px #000;
+.home__header a,
+.search__header-wrap a, 
+.registr__header-wrap a {
+    background: url(../imgs/2023-10-15_14-29-24-742.jpg);
+    width: 15%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
-/* 20 */
-.wrapper__news-front {
+.home-form,
+.registr__header-form {
+    width: 10%;
+    border-radius: 40px;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0 5px 10px yellow;
+    transition: .5s;
+    justify-content: center;
+}
+
+
+.home-btn, 
+.search__header-btn {
+    background-color: yellow;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5% 0%;
+    border: none;
+    text-align: center;
+}
+
+.home__heading {
+    padding: 21.3vh 0 37.5vh;
+    font-size: 7vmin;
+    color: yellow;
+    text-shadow: 0px 0px 7px #000;
+    text-align: center;
+}
+
+.home__main {
     display: flex;
-    padding: 6px 0 4px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.home__main-wrap{
+    width: 9.46%;
+    border: 2px solid black;
+    background-color: black;
+    color: black;
+    margin-bottom: 3.6%;
+}
+
+.home__main-item a {
+    text-decoration: none;
+}
+
+
+.home__cars__name {
+    color: yellow;
+}
+
+.home__cars__price {
+    font-weight: 700px;
+    font-size: 2rem;
+    color: yellow;
+}
+
+.home__news {
+    display: flex;
+    background-color: black;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.home__news-front {
+    display: flex;
     background-color: black;
     color: yellow;
     border: 1px solid black;
     font-size: 1rem;
 }
 
-.wrapper__news span {
+.home__news span {
     background-color: yellow;
     color: black;
 }
 
+.search__header a{
+    margin-right: -5%;
+}
+
+.search__header-form,
+.registr__header-form {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.search__header-submit, 
+.search__header-inp,
+.registr__header-inp,
+.registr__header-submit {
+    padding: 0 2%;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: .5s;
+    box-shadow: 0 5px 10px yellow;
+}
+
+.search__header-inp {
+    font-size: 0.9rem;
+    padding-left: 70%;
+}
+
+.search__header-btn {
+    width: 100%;
+    padding: 5% 0;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: .5s;
+    margin-left: 1%;
+    box-shadow: 0 5px 10px yellow;
+}
+
+.search-head {
+    width: 33%;
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 40px;
+    margin: 1% auto;
+}
+
+.search__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 33%;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid yellow;
+    backdrop-filter: blur(20px); 
+    border-radius: 10px;
+}
+
+.search__main-wrap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 1% 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #000000;
+    color: yellow;
+    font-size: 1rem;
+}
+
+.search__main-wrap select {
+    width: 19%;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin-right: 2%;
+}
+
+
+.search__main-tipe {
+    margin-right: 2%;
+}
+
+.search__main-wrap input {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+.search__main-wrap label {
+    width: 30%;
+    font-size: 1rem;
+    border: 2px solid yellow;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    color: yellow;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.search__main .search__main-price {
+  font-size: 0.9rem;
+  margin-right: 2%;
+}
+
+.search__main .search__main-price::placeholder {
+    color: yellow;
+    padding-left: 2%;
+}
+
+.search__main-btn {
+    width: 80%;
+    padding: 2%;
+    color: yellow;
+    background-color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    border: 2px solid yellow;
+    border-radius: 40px;
+    margin: 2% 0;
+}
+
+
+
+.registr__header-wrap {
+    justify-content: center;
+    padding: 0.5% 0;
+}  
+
+.registr__header-wrap a{
+    margin-right: 15%;
+}
+
+.registr__header-form {
+    background-color: black;
+    box-shadow: none;
+}
+
+.registr__header-inp {
+    border: none;
+}
+
+.registr__header-submit {
+    padding: 2%;
+}
+
+.registr__main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.registr__main-wrap {
+    width: 21.88%;
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 1% 2%;
+}
+.registr__main-header {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.registr__main-inp {
+    position: relative;
+    margin: 10% 0;
+}
+
+.registr__main-inp input {
+    width: 100%;
+    background: transparent; /*прозрачный */
+    border: none;
+    outline: none; /*контура нет */
+    border: 2px solid yellow;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: yellow;
+    padding: 5%;
+}
+    
+.registr__main-inp input::placeholder {
+    color: yellow;
+    opacity: 0.7;
+/* цвет символов в импутах */
+}
+
+.registr__main-inp .bx {
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    transform: translate(-50%);
+    background-color: #000;
+    font-size: 1.25rem;
+}
+
+.registr__main-remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.registr__main-remember label input {
+    accent-color: yellow; /*цвет фона ячейки где птичка */
+}
+
+.registr__main-remember a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.registr__main-remember a:hover {
+    text-decoration: underline;
+}
+
+.registr__main-btn
+{
+    width: 100%;
+    padding: 5% 0;
+    border-radius: 40px;
+    background-color: yellow;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.registr__main-link {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 10% 0 5%;
+    color: yellow;
+}
+
+.registr__main-link p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registr-link p a:hover {
+    text-decoration: underline;
+}
+
+.registr__main-btn {
+    margin-bottom: 10px;
+}
+
 /* 11 */
 article.column {
+    display: none;
     height: 63vh;
     background-color: black;
     text-align: center;
@@ -78,6 +406,7 @@ article.column {
 
 /* 20 */
 .column__heading {
+    display: none;
     width: 98vh;
     background-color: yellow;
     color: black;
@@ -146,6 +475,7 @@ article.column {
 
 /* 10 */
 .row {
+    display: none;
     width: 98vw;
     margin-top: 2.5%;
     height: 32.2vh;
@@ -213,7 +543,7 @@ article.check {
 
 /* 11 */
 .checkbox-1 input {
-display: none;
+    display: none;
 }
 
 /* 13 */
@@ -300,222 +630,4 @@ display: none;
     content: 'Ж';
     border: 2px black;
     font-size: 1,1rem;
-}
-
-.registr__body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: black; 
-}
-
-.registr__wrapper {
-    width: 420px;
-    border: 2px solid rgba(255, 255, 0, .6);
-    box-shadow: 0 0 10px;
-    border-radius: 10px;
-    padding: 30px 40px;
-}
-.registr__wrapper-header {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.registr__input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.registr__input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent; /*прозрачный */
-    border: none;
-    outline: none; /*контура нет */
-    border: 2px solid yellow;
-    border-radius: 40px;
-    font-size: 1rem;
-    color: yellow;
-    padding: 20px 45px 20px 20px;
-}
-    
-.registr__input-box input::placeholder {
-    color: yellow;
-    opacity: 0.7;
-/* цвет символов в импутах */
-}
-
-.registr__input-box .bx {
-    position: absolute;
-    right: 20px;
-    top: 30%;
-    transform: translate(-50%);
-    background-color: #000;
-    font-size: 1.25rem;
-}
-
-.registr__remember {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    margin: -15px 0 15px;
-    padding: 0 15px;
-}
-
-.registr__remember label input {
-    accent-color: yellow; /*цвет фона ячейки где птичка */
-    margin-right: 3px;
-}
-
-.registr__remember a {
-    color: yellow;
-    text-decoration: none;
-}
-
-.registr__remember a:hover {
-    text-decoration: underline;
-}
-
-.registr__btn {
-    width: 100%;
-    height: 45px;
-    border-radius: 40px;
-    background-color: yellow;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: .5s;
-}
-
-.registr__btn:hover, 
-.wrapper__btn:hover, 
-.search__submit:hover {
-    transform: scale(1.2);
-}
-
-.registr-link {
-    font-size: 0.8rem;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.registr-link p a {
-    color: yellow;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.registr-link p a:hover {
-    text-decoration: underline;
-}
-
-.search__submit, .search__imp {
-    width: 100px;
-    background-color: yellow;
-    color: black;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 40px;
-    transition: .5s;
-    margin-left: 10px;
-}
-
-.search__imp {
-    width: 200px;
-    font-size: 0.9rem;
-    padding-left: 10px;
-    text-align: center;
-}
-
-.search__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 33%;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid yellow;
-    backdrop-filter: blur(20px); 
-    border-radius: 10px;
-}
-
-.search__item {
-    display: flex;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-left: 15px;
-    background-color: #000000;
-    color: yellow;
-    font-size: 1rem;
-}
-
-.search__form {
-    background-color: black;
-    text-align: center;
-    border: 2px solid yellow;
-    border-radius: 40px;
-    transition: .5s;
-    margin-bottom: 20px;
-}
-
-
-.search__item-tipe {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 5px;
-}
-
-.search__item input {
-    height: 20px;
-    margin-left: 20px;
-    margin-right: 5px;
-    background-color: black;
-    color: yellow;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-.search__item select {
-    width: 120px;
-    margin-left: 20px;
-    background-color: black;
-    color: yellow;
-    border: 2px solid yellow;
-    border-radius: 10px;
-    text-align: center;
-}
-
-label {
-    width: 170px;
-    font-size: 1rem;
-    border: 2px solid yellow;
-    padding: 5px 5px;
-    border-radius: 10px;
-    text-align: left;
-    color: yellow;
-}
-
-.search__item .search__price {
-    margin-top: 4px;
-    border: 2px solid yellow;
-    margin-left: 35px;
-}
-
-.search__btn {
-    padding: 20px 20px;
-    color: yellow;
-    background-color: black;
-    font-size: 2rem;
-    font-weight: 700;
-    border: none;
-}
-
-.search__btn:hover,
-select:hover,
-input:hover {
-    cursor: pointer;
 }

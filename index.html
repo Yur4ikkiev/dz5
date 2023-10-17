@@ -5,48 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Автобазар</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="wrapper__header">
-        <div class="wrapper__logo">
-          <a href="#">
-            <img class="wrapper__logo-img" src="imgs/autoria.png" alt="logo" />
+  <body class="home">
+      <header class="home__header">
+          <a href="#"> <div class="home-logo"></div>
           </a>
-        </div>
         <form
-          class="wrapper__form"
+          class="home-form"
           action="pages/search.html"
           method="get"
           target="_blank"
         >
-          <button class="wrapper__btn" type="submit" class="wrapper__btn">
+          <button class="home-btn" type="submit">
             поиск авто
           </button>
         </form>
         <form
-          class="wrapper__form"
+          class="home-form"
           action="pages/registration.html"
-          method="get"
+          method="post"
           target="_blank"
         >
-          <button class="wrapper__btn" type="submit" class="wrapper__btn">
-            Войти Зарегистрироваться
+          <button class="home-btn" type="submit">
+            Войти 
           </button>
         </form>
       </header>
-      <h1 class="wrapper__heading">АВТО ИЗ США</h1>
-      <div class="wrapper__news">
-        <p class="wrapper__news-front">
-          <span class="wrapper__news-spa"> <b>Новости:</b></span>
+      <h1 class="home__heading">АВТО ИЗ США</h1>
+      <main class="home__main">
+        <div class="home__main-wrap">
+          <div class="home__main-item">
+            <a
+              href="https://auto.ria.com/uk/newauto/auto-peugeot-2008-1901895.html"
+            >
+              <img
+                class="home__cars-img"
+                src="imgs/peugeot-2008__1829604-620x465x72.webp"
+                alt="cars"
+              />
+              <span class="home__cars__name"> Peugeot 2008</span>
+              <br />
+              <span class="home__cars__price">26000 $</span>
+            </a>
+          </div>
+        </div>
+        <div class="home__main-wrap">
+          <div class="home__main-item">
+            <a
+              href="https://auto.ria.com/uk/auto_kawasaki_z_1000_35394303.html"
+            >
+              <img
+                class="cars-img"
+                src="imgs/kawasaki_z-1000__519351803hd.webp"
+                alt="cars"
+              />
+              <span class="home__cars__name"> Kawasaki Z 2015</span>
+              <br />
+              <span class="home__cars__price">15000 $</span>
+            </a>
+          </div>
+        </div>
+        <div class="home__main-wrap">
+          <div class="home__main-item">
+            <a
+              href="https://auto.ria.com/uk/newauto/auto-peugeot-2008-1901895.html"
+            >
+              <img
+                class="cars-img"
+                src="imgs/peugeot-2008__1829604-620x465x72.webp"
+                alt="cars"
+              />
+              <span class="home__cars__name"> Peugeot 2008</span>
+              <br />
+              <span class="home__cars__price">26000 $</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="home__main-wrap">
+          <div class="home__main-item">
+            <a
+              href="https://auto.ria.com/uk/newauto/auto-peugeot-2008-1901895.html"
+            >
+              <img
+                class="cars-img"
+                src="imgs/peugeot-2008__1829604-620x465x72.webp"
+                alt="cars"
+              />
+              <span class="home__cars__name"> Peugeot 2008</span>
+              <br />
+              <span class="home__cars__price">26000 $</span>
+            </a>
+          </div>
+        </div>
+        </main>
+        <div class="home__news">
+          <p class="home__news-front">
+            <span class="home__news-spa"> <b>Новости:</b></span>
+          </p>
           <marquee>
             Рекорды Bugatti под руководством VW В 1998 году Volkswagen приобрёл
             «хромающую» на тот момент французскую марку Bugatti всего за 50 млн
@@ -66,8 +130,9 @@
             За последние десятилетия гиперкары Bugatti удалось вытеснить только
             Hennessey, SSC и Koenigsegg.
           </marquee>
-        </p>
+        </div>
       </div>
+    </div>
     </div>
     <!-- article.check>label.checkbox-$*2>input[type="checkbox" cheked]+span{checkbox-$} -->
     <!--НА ЭТОТ КОД НЕ СМОТРЕТЬ!!!!!!-->
@@ -111,7 +176,7 @@
           <img src="imgs/bmw.png" alt="BMW" />
         </div>
         <div class="row__block">
-          <img src="imgs/Volvo-Logo-Transparent.png" alt="volvo" />
+          <img src="imgs/volvo-logo-transparent.png" alt="volvo" />
         </div>
       </div>
     </article>

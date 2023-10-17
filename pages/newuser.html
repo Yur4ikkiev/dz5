@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>newuser</title>
+    <title>registration</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
@@ -11,35 +11,78 @@
       rel="stylesheet"
     />
   </head>
-  <body class="registr__body">
-    <div class="registr__wrapper">
-      <form action="">
-        <h1 class="registr__wrapper-header">Регистрация</h1>
+  <body class="registr">
+    <header class="registr__header">
+      <div class="registr__header-wrap">
+        <a href="../index.html"></a>
+        <form
+          class="registr__header-form"
+          method="post"
+          action="https://fom.in.ua/echo"
+        >
+          <input
+            type="text"
+            name="text"
+            class="registr__header-inp"
+            placeholder="поиск по сайту"
+          />
+          <input
+            type="submit"
+            name="submit"
+            class="registr__header-submit"
+            target="_blank"
+            value="искать"
+          />
+        </form>
+      </div>
+    </header>
+    <main class="registr__main">
+        <div class="registr__main-wrap">
+          <form method="post" action="https://fom.in.ua/echo">
+            <h1 class="registr__main-header">Регистрация</h1>
 
-        <div class="registr__input-box">
-          <i class="bx bxs-user"></i>
-          <input type="text" placeholder="Пользователь" required />
-          <!-- required объязательное для заполнения -->
-        </div>
+            <div class="registr__main-inp">
+              <i class="bx bxs-user"></i>
+              <input
+                type="text"
+                name="name"
+                placeholder="Пользователь"
+                required
+              />
+              <!-- required объязательное для заполнения -->
+            </div>
 
-        <div class="registr__input-box">
-          <i class="bx bx-envelope"></i>
-          <input type="text" placeholder="@mail" required />
-          <!-- required объязательное для заполнения -->
-        </div>
+            <div class="registr__main-inp">
+              <i class="bx bx-envelope"></i>
+              <input type="text" name="mail" placeholder="@mail" required />
+              <!-- required объязательное для заполнения -->
+            </div>
 
-        <div class="registr__input-box">
-          <input type="Password" placeholder="Пароль" required />
-          <!-- required объязательное для заполнения -->
-          <i class="bx bxs-lock"></i>
-        </div>
+            <div class="registr__main-inp">
+              <input
+                type="Password"
+                name="password"
+                placeholder="Пароль"
+                required
+              />
+              <!-- required объязательное для заполнения -->
+              <i class="bx bxs-lock"></i>
+            </div>
 
-        <div class="registr__input-box">
-          <input type="Password" placeholder="Повторите пароль" required />
-          <!-- required объязательное для заполнения -->
-          <i class="bx bxs-lock"></i>
+            <div class="registr__main-inp">
+              <input
+                type="Password"
+                name="password repeat"
+                placeholder="Повторите пароль"
+                required
+              />
+              <!-- required объязательное для заполнения -->
+              <i class="bx bxs-lock"></i>
+            </div>
+            <button type="submit" class="registr__main-btn">Регистрация</button>
+          </form>
         </div>
-      </form>
-    </div>
+      </body>
+    </main>
   </body>
 </html>
