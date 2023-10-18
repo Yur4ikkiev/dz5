@@ -15,7 +15,7 @@ a,
 .search__main-btn:hover,
 .search__main select:hover,
 .search__main input:hover{
-cursor: pointer;
+    cursor: pointer;
 }
 
 .registr__btn:hover, 
@@ -23,13 +23,13 @@ cursor: pointer;
 .newuser__btn,
 .search__header-submit:hover,
 .home__main-wrap:hover,
-.home__header a:hover,
+.home-header a:hover,
 .search__header-btn:hover {
     transform: scale(1.2);
 }
 
 
-.home__header,
+.home-header,
 .search__header-wrap,
 .registr__header-wrap {
     padding: 0.5% 1%;
@@ -39,7 +39,7 @@ cursor: pointer;
     justify-content: space-between;
 }   
 
-.home__header a,
+.home-header a,
 .search__header-wrap a, 
 .registr__header-wrap a {
     background: url(../imgs/2023-10-15_14-29-24-742.jpg);
@@ -60,7 +60,6 @@ cursor: pointer;
     transition: .5s;
     justify-content: center;
 }
-
 
 .home-btn, 
 .search__header-btn {
@@ -243,8 +242,8 @@ cursor: pointer;
 }
 
 .search__main .search__main-price {
-  font-size: 0.9rem;
-  margin-right: 2%;
+    font-size: 0.9rem;
+    margin-right: 2%;
 }
 
 .search__main .search__main-price::placeholder {
